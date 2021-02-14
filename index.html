@@ -1,1 +1,161 @@
-<h1>Dom Play assigment goes here </h1>
+ <!DOCTYPE html>
+ <html>
+   <head>
+     <nav>
+<ul>
+<li><a href="index.html">HOME</a></li>
+<li><a href=" information.html">ABOUT</a></li>
+
+<li><a href="Seattle">Seattle</a></li>
+<li><a href="videos.html">VIDEOS</a></li>
+<li><a href="Washington state">State</a></li>
+<li><a href="contact.html">CONTACT</a></li>
+</ul>
+</nav>
+<link rel="stylesheet" href="style.css">
+
+<p><a href="#p1">Go to the Dom play</a></p>
+
+
+
+
+    </head>
+
+
+
+
+ <head>
+ 	<meta charset="utf-8">
+ 	<title>Dom Play</title>
+   <style>
+			
+		
+
+			
+			
+			
+			h2 {
+				border: 2px solid powderblue;
+				margin: 50px;
+				padding: 30px;
+			}
+      .container {
+  position: relative;
+}
+p { 
+        text-align: center; 
+    } 
+
+			
+		</style>
+ </head>
+<body>
+  <h1>  BEAUTY AND THE BEAST </h1>
+  <p> Written by
+
+                     Stephen Chbosky & Evan Spiliotopoulos</p>
+   <h1 id="p1">Dom Play</h1>
+   <div id="clickSpans">
+   <p><span data-actor="Majorodomo">Majorodomo: Master, it's time.                                      
+
+    With a haughty wave, the Prince instructs his FOOTMAN to
+    bring more light.
+
+            </span></p>
+   <p><span data-actor="belle">belle:    There goes the baker with his tray like
+              always
+              The same old bread and rolls to sell
+
+    Belle approaches JEAN, the potter, tending to his MULE.              
+ </span></p>
+   <p><span data-actor="Majorodomo"> majorodomo: Good morning, Belle
+
+    Jean scratches his head, trying to remember something.    He         
+    searches his cart which is loaded with pottery.</span></p>
+  
+   <p><span data-actor="belle">belle:Two cities in Northern Italy.    I  didn't want to come back.       Belle hands "Romeo and Juliet" to Pere Robert, who dutifully
+     returns it to the shelves of the town's "library": a COUPLE DOZEN BOOKS in total. She remains hopeful.
+ </span></p>
+   <p><span data-actor="Jean">jean:  I believe I have. Problem is, I can't
+              remember what. Well, I'm sure it will
+              come to me.
+
+    As she leaves:                                                       
+  </span></p>
+
+ <p><span data-actor="belle">belle:    T Look there he goes, isn't he dreamy
+          Monsieur Gaston, oh he's so cute
+          Be still my heart I'm hardly breathing
+          He's such a tall, dark, strong and
+          handsome brute
+             
+ </span></p>
+   <p><span data-actor="Jean">jean:   <p><span data-actor="Jean">jean:  Right from the moment when I met her,
+          saw her
+          I said she's gorgeous and I fell
+          Here in town there's only she
+          Who is beautiful as me
+          So I'm making plans to woo and marry
+          Belle
+  </span></p>                                         
+  </span></p>
+   
+</div>
+   <script>
+       // span is var so data is global 
+       var spans = document.querySelectorAll("#clickSpans span");
+
+      // console.log(spans);
+
+      for(const mySpan of spans){
+
+        mySpan.addEventListener("click",function(event){
+
+            
+            
+            //alert(mySpan.dataset.actor);
+           // let myActor = mySpan.dataset.actor;
+            
+            highlightActor(mySpan.dataset.actor);
+            
+            
+            
+
+        });
+
+
+
+
+      }
+
+
+
+
+
+
+       
+       function highlightActor(myActor){
+          // alert("hello form highlightActor: " + myActor);
+
+
+           for (const mySpan of spans ) {
+                if(mySpan.dataset.actor == myActor){ // Current actor? highlight
+                mySpan.style.backgroundColor = 'yellow';
+                mySpan.style.fontWeight ='bold';
+            }else{ // not current? change to white 
+                mySpan.style.backgroundColor = 'white';
+           }
+
+
+           }
+ 
+       }
+       //alert("hello");
+      // document.getElementById("target").style.backgroundColor = "yellow";
+ 
+   </script>
+</body>
+ 
+</html>
+
+

@@ -1,0 +1,71 @@
+	body 
+			{
+				background-color: #6699cc;
+			}
+
+			h1   
+			{
+				color: #000080;
+        text-align:center;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+			}
+			
+
+
+/* EXAMPLE DELETE AFTER
+body
+{
+  background-image: url("icecream.jpg");
+  background-color:#CCEEFF;
+}
+h1 
+{
+  color: blue;
+  text-align: center;
+  background-color:pink;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 300%;
+}
+h2
+{
+  color: black;
+  text-align: center;
+  margin: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 200%
+}
+h3
+{
+  color:black;
+  margin: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+p 
+{
+  font-size: 130%;
+  color: black;
+  border: 3px solid white;
+  padding:10px;
+  margin: 50px;
+  font-family: Arial, Helvetica, sans-serif; 
+}
+li
+{
+  font-size: 150%;
+  margin: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ol{
+ border: 3px solid seagreen;
+}
+table{
+   text-align: center;
+}
+*/
+
+nav { }
+nav ul { list-style:none; text-align:center; border-top:1px solid #eee; border-bottom:1px solid #eee; padding:10px 0; }
+nav ul li { display:inline; text-transform:uppercase; padding:0 10px; letter-spacing:5px; }
+nav ul li a { text-decoration:none; color:#eee; }
+nav ul li a:hover { color:#00295E; }
